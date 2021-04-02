@@ -32,44 +32,43 @@ function generatePassword() {
       var upperBank = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
       var specialBank = ['!','@','#','$','%','^', '&', '*', '(', ')', '{', '}', '+', '=', '<', '>', '/'];
       var numericBank = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-      var avaiableBank = []; // ['a', 'b', 'c', 'A', 'B', 'C']
+      var availableBank = []; // ['a', 'b', 'c', 'A', 'B', 'C']
 
       if (lowercase) {
         // The foreach is cycling through my lowerbank array individually and putting all of these into my available bank variable
         lowerBank.forEach(function(character) {
-          avaiableBank.push(character);
+          availableBank.push(character);
         })
       }
       if (uppercase) {
         // The foreach is cycling through my upperbank array individually and putting all of these into my available bank variable
         upperBank.forEach(function(character) {
-          avaiableBank.push(character);
+          availableBank.push(character);
         })
       }
       if (specialBank) {
         // The foreach is cycling through my special array individually and putting all of these into my available bank variable
         specialBank.forEach(function(character) {
-          avaiableBank.push(character);
+          availableBank.push(character);
         })
       }
       if (numericBank) {
         // The foreach is cycling through my numeric array individually and putting all of these into my available bank variable
         numericBank.forEach(function(character) {
-          avaiableBank.push(character);
+          availableBank.push(character);
         })
       }
       
-      console.log(avaiableBank);
+      console.log(availableBank);
 
-      //repeat this for uppercase etc
       var password = '';
       for (var i = 0; i < parseInt(desiredLength); i++) {
-        //get a random character from the list of avaialbe characters based on user confirmations
+        //get a random character from the list of availalbe characters based on user confirmations
         // get a random number based on the length of the avaiable bank
-        var randomNumber = Math.floor(Math.random()*(avaiableBank.length) + 0) //any number between 0 and 6 in our example
+        var randomNumber = Math.floor(Math.random()*(availableBank.length) + 0)
         console.log(randomNumber);
         //that number can be the [number] of the array;  -> random number might be 4---> randomCharacter = availableBank[4] ---> randomCharater = 'B'
-        var randomCharacter = avaiableBank[randomNumber] // availalbeBank[4] -> 'B'
+        var randomCharacter = availableBank[randomNumber] // availalbeBank[4] -> 'B'
         console.log(randomCharacter)
         //concatenate the random character onto the password string
         password = password + randomCharacter;
@@ -83,7 +82,7 @@ function generatePassword() {
       //no character types confirmed
       //alert user to their error
       //loop em back
-      alert("whoops");
+      alert("That doesn't seem right");
       generatePassword();
     }
     
