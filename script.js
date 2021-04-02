@@ -14,7 +14,7 @@ function writePassword() {
 
 function generatePassword() {
   //prompt the user for the desired length of the password
-  var desiredLength = prompt("What is the desired lenght of password? (8-120)"); // return a string---we want to convert to a number
+  var desiredLength = prompt("What is the desired length of password? (8-120)"); // return a string---we want to convert to a number
     
   // we have a good length answer given
   if (desiredLength < 120 && desiredLength > 7) {
@@ -35,21 +35,25 @@ function generatePassword() {
       var avaiableBank = []; // ['a', 'b', 'c', 'A', 'B', 'C']
 
       if (lowercase) {
+        // The foreach is cycling through my lowerbank array individually and putting all of these into my available bank variable
         lowerBank.forEach(function(character) {
           avaiableBank.push(character);
         })
       }
       if (uppercase) {
+        // The foreach is cycling through my upperbank array individually and putting all of these into my available bank variable
         upperBank.forEach(function(character) {
           avaiableBank.push(character);
         })
       }
       if (specialBank) {
+        // The foreach is cycling through my special array individually and putting all of these into my available bank variable
         specialBank.forEach(function(character) {
           avaiableBank.push(character);
         })
       }
       if (numericBank) {
+        // The foreach is cycling through my numeric array individually and putting all of these into my available bank variable
         numericBank.forEach(function(character) {
           avaiableBank.push(character);
         })
