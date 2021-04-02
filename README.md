@@ -29,7 +29,7 @@ My greatest point of struggle in this whole process was this portion of the code
         })
       }`
 
-I ended up using a series of if statements in order to cycle through my defined variable arrays which then assigns them to my available bank. My available bank is what is then accessed in order to generate the password. Paul was a big help in explaining this section to me, so thank you Paul <3
+I ended up using a series of if statements in order to cycle through my defined variable arrays which then assigns them to my available bank. My available bank is what is then accessed in order to generate the password. Paul was a big help in explaining this section to me, so thank you Paul <3 My javascript is heavily commented with how exactly I worked through the remaining processes, but I thought it would be helpful to include these specific points for later reference as I struggled with these concepts specifically.
 
 ## Technology Stack 
 HTML, CSS, Javascript

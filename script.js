@@ -89,7 +89,7 @@ function generatePassword() {
   // bad length answer
   } else {
     //alert user to bad length
-    console.log('oops you chose a bad length')
+    alert('oops you chose a bad length')
     generatePassword();
   }
 }
